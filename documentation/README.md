@@ -3,6 +3,14 @@
 ### Requirements: 
 1. Python3 Version 3.14.7
 
+## Running the pipeline
+Requirements: `pandas`, `scikit-learn`.
+
+```bash
+pip3 install pandas scikit-learn
+python3 src/pipeline.py
+```
+
 ### Data Source:
 | File | Rows | Columns 
 | --- | --- | --- |

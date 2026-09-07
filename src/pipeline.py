@@ -42,10 +42,9 @@ duplicate_value_check(dirty_df)
 dirty_df = dirty_df.drop_duplicates()
 duplicate_value_check(dirty_df)
 
-### Transform
 # Normalizing height column to meters
-# dirty_df['height'] = dirty_df['height'] / 100
-# dirty_df['height'].describe()
+dirty_df['height'] = dirty_df['height'] / 100
+dirty_df['height'].describe()
 
 dirty_df['transaction_date'] = pd.to_datetime(dirty_df['transaction_date'], format='mixed')
 dirty_df['transaction_date'].describe()
